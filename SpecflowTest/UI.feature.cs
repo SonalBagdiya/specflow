@@ -98,18 +98,6 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 3
 testRunner.Given("I have started the chrome browser UI", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 4
-testRunner.And("i am on the .netcore website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 5
-testRunner.Then("find the links count on home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 6
-testRunner.When("i click on the about page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
-testRunner.Then("display the about page title and print in console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 8
-testRunner.When("i click on the contact page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
-testRunner.Then("display the contact page title and content on the page and print in console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
