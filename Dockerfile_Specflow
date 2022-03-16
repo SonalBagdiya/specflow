@@ -1,17 +1,5 @@
-FROM infydp.ad.infosys.com:8082/alpine/git as clone
-ARG url
-ARG branch
-ARG internal_file
-RUN mkdir -p /root/.ssh
-ADD ${internal_file}/id_rsa /root/.ssh/id_rsa
-COPY ./config /root/.ssh/config
-RUN chmod 700 -R /root/.ssh
-WORKDIR /app
-RUN git clone ${url}
-
-FROM infydp.ad.infosys.com:8082/devpassis/seleniumdotnetcore
+FROM devpassis/seleniumdotnetcore
 ARG projectpath
-COPY --from=clone /app/${projectpath}/ /data/
 WORKDIR /data
 RUN ls
 RUN dotnet restore --source packages
