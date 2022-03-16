@@ -98,6 +98,8 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 3
 testRunner.Given("I have started the chrome browser UI", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 4
+testRunner.And("i am on the .netcore website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
